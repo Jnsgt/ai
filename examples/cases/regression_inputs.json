@@ -1,0 +1,6 @@
+{
+  "input_name": "input",
+  "shape": [4, 1],
+  "dtype": "float32",
+  "data": [0.0, 1.0, 5.0, 10.0]
+}

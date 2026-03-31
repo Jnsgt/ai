@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cldltest"
+version = "0.1.0"
+description = "Cross-language ONNX inference consistency tester"
+requires-python = ">=3.9"
+dependencies = [
+    "onnxruntime",
+    "numpy"
+]
+
+[project.scripts]
+cldltest = "cldltest.cli:main"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+include = ["cldltest", "cldltest.*"]
+exclude = ["node_modules*", "outputs*", "examples*"]
