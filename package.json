@@ -6,12 +6,22 @@
     "example": "examples"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "install-deps": "npm install",
+    "test": "echo \"Use the Python CLI and scripts under tests/ for project testing.\""
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": [
+    "onnx",
+    "onnxruntime",
+    "cross-language",
+    "deep-learning",
+    "consistency-testing",
+    "python",
+    "nodejs",
+    "java"
+  ],
+  "author": "Cross-Language DL Unified Contributors",
+  "license": "MIT",
+  "description": "A cross-language ONNX inference consistency testing toolkit for Python, Node.js, and Java.",
   "dependencies": {
     "onnxruntime-node": "^1.24.3"
   }
